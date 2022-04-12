@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&family=Lobster&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="sidebar">
+        <form action="#">
+            <label for="bookTitle">Book Title</label>
+            <input type="text" name="bookTitle" id="bookTitle">
+            <label for="bookAuthor">Author's Name</label>
+            <input type="text" name="bookAuthor" id="bookAuthor">
+            <label for="bookPages">Number of Pages</label>
+            <input type="number" name="bookPages" id="bookPages" min="1">
+            <label for="read">The book has been read.</label>
+            <input type="checkbox" name="read" id="read">
+            <label for="submit"></label>
+            <input type="button" value="submit">
+        </form>
+    </div>
+
+    <div id="main">
+        Your Library
+        <div id="bookDisplay"></div>
+    </div>
+
+    <div id="footer">Copyright @JonnyG7613</div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
