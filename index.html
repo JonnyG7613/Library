@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&family=Lobster&display=swap"
         rel="stylesheet">
+    <script src="./script.js" defer></script>
 
 </head>
 
@@ -31,24 +32,32 @@
                 <input type="number" name="bookPages" id="bookPages" min="1">
             </div>
             <div>
-                <label for="read">The book has been read.</label>
-                <input type="checkbox" name="read" id="read">
+                <label for="bookRead">The book has been read.</label>
+                <input type="checkbox" name="bookRead" id="bookRead">
             </div>
             <div>
                 <label for="submit"></label>
-                <input type="button" value="submit">
+                <input type="button" value="submit" id="submit">
             </div>
         </form>
     </div>
 
     <div id="main">
         <div id="title">Your Library</div>
-        <div id="bookDisplay"></div>
+        <div id="bookDisplay">
+            <div class="book">
+                <p>Example</p>
+                <p>Example Author</p>
+                <p>200 pgs</p>
+                <p>Read</p>
+                <img src="./delete.png" alt="delete" id="delete">
+                <img src="./book-open-blank-variant.png" alt="read" id="read">
+            </div>
+        </div>
     </div>
 
     <div id="footer">Copyright @JonnyG7613</div>
 
-    <script src="./script.js"></script>
 </body>
 
 </html>
